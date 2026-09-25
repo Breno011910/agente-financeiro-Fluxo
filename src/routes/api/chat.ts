@@ -85,7 +85,7 @@ export const Route = createFileRoute("/api/chat")({
             user_id: userId,
             message_id: message.id,
             role: message.role,
-            parts: message.parts as unknown as Database["public"]["Tables"]["messages"]["Insert"]["parts"],
+            parts: message.parts as unknown as import("@/integrations/supabase/types").Json,
           });
           if (error) console.error("[chat] falha ao salvar mensagem", error);
         };
