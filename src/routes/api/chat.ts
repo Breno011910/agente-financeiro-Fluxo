@@ -277,7 +277,7 @@ export const Route = createFileRoute("/api/chat")({
         const result = streamText({
           model: lovable.responses("openai/gpt-6-astra"),
           system: `${SYSTEM_PROMPT}\n\nHoje é ${new Date().toLocaleDateString("pt-BR")}.`,
-          messages: convertToModelMessages(messages),
+          messages: await convertToModelMessages(messages),
           tools,
           stopWhen: stepCountIs(50),
           providerOptions: {
