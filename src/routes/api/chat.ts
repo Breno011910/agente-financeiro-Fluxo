@@ -85,7 +85,7 @@ export const Route = createFileRoute("/api/chat")({
             user_id: userId,
             message_id: message.id,
             role: message.role,
-            parts: message.parts as unknown as Database["public"]["Tables"]["messages"]["Insert"]["parts"],
+            parts: message.parts as unknown as import("@/integrations/supabase/types").Json,
           });
           if (error) console.error("[chat] falha ao salvar mensagem", error);
         };
@@ -277,7 +277,7 @@ export const Route = createFileRoute("/api/chat")({
         const result = streamText({
           model: lovable.responses("openai/gpt-6-astra"),
           system: `${SYSTEM_PROMPT}\n\nHoje é ${new Date().toLocaleDateString("pt-BR")}.`,
-          messages: convertToModelMessages(messages),
+          messages: await convertToModelMessages(messages),
           tools,
           stopWhen: stepCountIs(50),
           providerOptions: {
