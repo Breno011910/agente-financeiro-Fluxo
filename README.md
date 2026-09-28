@@ -1,26 +1,34 @@
-# Pixel Perfect Replica
+Fluxo
 
-Implement exactly the screenshot and nothing else
+Assistente financeiro pessoal em português. Você conversa com o Fluxo ("gastei 45 no iFood", "recebi 3000 de salário") e ele registra, consulta e simula tudo por você.
 
-This project was built with [Lovable](https://lovable.dev).
+Demo: https://look-alike-capturer.lovable.app
 
-**Live app**: https://look-alike-capturer.lovable.app
+Funcionalidades
+Chat com agente de IA que registra gastos e entradas em linguagem natural
+Metas financeiras com acompanhamento de progresso
+Patrimônio com simulação de juros compostos
+Relatórios do mês por categoria
+Login com dados isolados por usuário
+Tecnologias
+TanStack Start (React)
+Supabase (banco, auth e RLS)
+Vercel AI SDK
+Tailwind CSS e shadcn/ui
+Como rodar
+sh
+git clone https://github.com/Breno011910/agente-financeiro-Fluxo.git
+cd agente-financeiro-Fluxo
+bun install
+bun run dev
 
-## Build with Lovable
+Crie um .env com as chaves do seu projeto Supabase:
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4a1ab6d7-c2a2-414f-8e66-0e270563d1c1).
+env
+SUPABASE_URL=
+SUPABASE_PUBLISHABLE_KEY=
+VITE_SUPABASE_URL=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+LOVABLE_API_KEY=
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+Aplique as migrations da pasta supabase/migrations/ no seu projeto
