@@ -1,4 +1,3 @@
-<div align="center">
 💸 Fluxo
 
 Organize suas finanças conversando.
@@ -7,7 +6,6 @@ Diga "gastei 45 no iFood" e o Fluxo registra, categoriza e acompanha tudo por vo
 
 🚀 Ver demo online
 
-</div>
 ✨ O que ele faz
 💬 Chat com IA que registra gastos e entradas em linguagem natural
 📊 Resumo do mês por categoria, com alerta de limite
@@ -43,8 +41,4 @@ LOVABLE_API_KEY=
 
 E aplique as migrations de supabase/migrations/ no seu projeto Supabase.
 
-<div align="center">
-
 Feito por Breno 💚
-
-</div>
