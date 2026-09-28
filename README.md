@@ -1,28 +1,38 @@
-Fluxo
+<div align="center">
+💸 Fluxo
 
-Assistente financeiro pessoal em português. Você conversa com o Fluxo ("gastei 45 no iFood", "recebi 3000 de salário") e ele registra, consulta e simula tudo por você.
+Organize suas finanças conversando.
 
-Demo: https://look-alike-capturer.lovable.app
+Diga "gastei 45 no iFood" e o Fluxo registra, categoriza e acompanha tudo por você.
 
-Funcionalidades
-Chat com agente de IA que registra gastos e entradas em linguagem natural
-Metas financeiras com acompanhamento de progresso
-Patrimônio com simulação de juros compostos
-Relatórios do mês por categoria
-Login com dados isolados por usuário
-Tecnologias
-TanStack Start (React)
-Supabase (banco, auth e RLS)
-Vercel AI SDK
-Tailwind CSS e shadcn/ui
-Como rodar
+🚀 Ver demo online
+
+</div>
+✨ O que ele faz
+💬 Chat com IA que registra gastos e entradas em linguagem natural
+📊 Resumo do mês por categoria, com alerta de limite
+🎯 Metas com valor alvo, prazo e progresso
+🏦 Patrimônio com simulação de juros compostos
+🔒 Dados privados: cada usuário só vê o que é seu
+💬 Exemplo
+text
+Você:   gastei 45 no ifood
+Fluxo:  Registrei R$ 45,00 em Alimentação. 🍔
+
+Você:   quanto já gastei esse mês?
+Fluxo:  Você gastou R$ 812,00, dentro do seu limite de R$ 1.500.
+🛠️ Tecnologias
+
+React · TanStack Start · Supabase · Vercel AI SDK · Tailwind CSS
+
+🚀 Como rodar
 sh
 git clone https://github.com/Breno011910/agente-financeiro-Fluxo.git
 cd agente-financeiro-Fluxo
 bun install
 bun run dev
 
-Crie um .env com as chaves do seu projeto Supabase:
+Crie um arquivo .env na raiz:
 
 env
 SUPABASE_URL=
@@ -31,4 +41,10 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_PUBLISHABLE_KEY=
 LOVABLE_API_KEY=
 
-Aplique as migrations da pasta supabase/migrations/ no seu projeto
+E aplique as migrations de supabase/migrations/ no seu projeto Supabase.
+
+<div align="center">
+
+Feito por Breno 💚
+
+</div>
